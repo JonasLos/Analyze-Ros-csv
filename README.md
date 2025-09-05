@@ -15,3 +15,5 @@ To use this code, go to the correct directory in your terminal, then input:
 
 
 I have also included an odometry and an imu csv file for testing purposes, and to show the type of information the script can anazlyze.
+The files are created from either an existing rosbag or live-data by running "rostopic echo /topic_name -p > file_name.csv" or "rostopic echo -b rosbag_name.bag /topic_name -p > file_name.csv". 
+Topic type is nav_msgs/Odometry.msg or sensor_msgs/Imu.msg
